@@ -34,3 +34,11 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
   document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
 }
+
+// Keep the reader's attention on one microscopy movie at a time.
+const movies = [...document.querySelectorAll('video')];
+movies.forEach(movie => {
+  movie.addEventListener('play', () => {
+    movies.forEach(other => { if (other !== movie) other.pause(); });
+  });
+});

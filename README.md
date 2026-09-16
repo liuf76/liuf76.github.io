@@ -19,7 +19,7 @@ GitHub's official instructions:
 
 ## Edit the website later
 
-- **Text, publications, teaching and links:** edit `index.html` in GitHub using the pencil button, then commit the changes. The sections are identified by `id="about"`, `id="research"`, `id="publications"`, `id="teaching"`, `id="talks"`, and `id="contact"`.
+- **Text, publications, teaching and links:** edit `index.html` in GitHub using the pencil button, then commit the changes. The sections are identified by `id="about"`, `id="platform"`, `id="research"`, `id="publications"`, `id="teaching"`, `id="talks"`, and `id="contact"`.
 - **CV:** replace `assets/Fan_Liu_CV.pdf`, keeping that filename so the existing links continue to work.
 - **Fonts, colors and layout:** edit `styles.css`.
 - **Mobile menu behavior:** edit `main.js`.
@@ -35,3 +35,13 @@ https://news.mit.edu/2025/mit-engineers-uncover-surprising-reason-why-tissues-ar
 ## Technical details
 
 Plain HTML, CSS and JavaScript. No package installation, build command, database, external API or paid hosting plan is required. The files are arranged for a user site at the repository root. No custom-domain configuration is included.
+
+## Portrait and microscopy movies
+
+- Portrait: `assets/fan-liu.jpg` (original supplied by Fan Liu; web copy has no EXIF metadata).
+- Compression assay: `assets/a549-compression.mp4`.
+- Tracer experiments: `assets/fluid-influx.mp4` and `assets/fluid-efflux.mp4`.
+- Each video has a corresponding `-poster.jpg`. Videos use H.264/yuv420p MP4 with faststart, preserve the original frames and acquisition timing, and have no audio. Playback speed differs from acquisition time as shown by the embedded timestamps.
+- Players load on demand, have native controls, and do not autoplay. Playing another movie pauses the previous one.
+- `assets/platform-schematic.svg` is an explanatory diagram of the published compression assay, not to scale. The force readout is the microbalance, not cantilever bending.
+- The fluorescence movies are complementary tracer experiments. Efflux uses hyperosmotic conditions (750 mM sucrose), not mechanical compression. See Supplementary Fig. 9 of the linked Nature Physics paper.
