@@ -1,1 +1,37 @@
-# liuf76.github.io
+# Fan Liu academic website
+
+Prepared for **https://liuf76.github.io/**.
+
+This package contains the complete website, including the research image and downloadable CV. It is ready to publish; preparing or downloading these files does not itself activate the GitHub address.
+
+## Publish using the GitHub website
+
+1. Sign in to GitHub as **liuf76**.
+2. Create a repository named exactly **liuf76.github.io**. Select **Public** for free GitHub Pages hosting, turn on **Add README**, and create the repository. If you already have a repository with this exact name, use that repository and review its existing contents before replacing files.
+3. Unzip this package on your computer. In your repository, choose **Add file → Upload files**. Drag the extracted files and the entire **assets** folder into the upload area. Upload the contents of the extracted folder, not the ZIP or the outer folder itself. The repository's top level must contain **index.html**, **styles.css**, **main.js**, **README.md**, and **assets**. The package also includes **.nojekyll** to serve the files without Jekyll processing; include it if visible in your file picker. The ordinary filenames in this package also work with GitHub's default processing if that file is omitted.
+4. Click **Commit changes** to save the uploaded files to **main**.
+5. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, then branch **main** and folder **/(root)**. Click **Save**. Leave **Custom domain** empty.
+6. Allow up to 10 minutes for publishing. The Pages settings page will show the published address. Open **https://liuf76.github.io/** to view the website. If GitHub reports a failed deployment, open the **Actions** tab for the error.
+
+GitHub's official instructions:
+- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+## Edit the website later
+
+- **Text, publications, teaching and links:** edit `index.html` in GitHub using the pencil button, then commit the changes. The sections are identified by `id="about"`, `id="research"`, `id="publications"`, `id="teaching"`, `id="talks"`, and `id="contact"`.
+- **CV:** replace `assets/Fan_Liu_CV.pdf`, keeping that filename so the existing links continue to work.
+- **Fonts, colors and layout:** edit `styles.css`.
+- **Mobile menu behavior:** edit `main.js`.
+- You can also request revisions in the original ChatGPT conversation. Changes must be uploaded or pushed to this GitHub repository to update the GitHub website; editing the separate ChatGPT-hosted draft does not automatically synchronize GitHub.
+
+Each change committed to the configured publishing branch triggers a website update.
+
+## Research image credit
+
+The fluorescence microscopy image is credited to the researchers through MIT News. Its source and applicable reuse terms are at:
+https://news.mit.edu/2025/mit-engineers-uncover-surprising-reason-why-tissues-are-flexible-rigid-0620
+
+## Technical details
+
+Plain HTML, CSS and JavaScript. No package installation, build command, database, external API or paid hosting plan is required. The files are arranged for a user site at the repository root. No custom-domain configuration is included.
