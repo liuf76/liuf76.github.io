@@ -38,10 +38,14 @@ Plain HTML, CSS and JavaScript. No package installation, build command, database
 
 ## Portrait and microscopy movies
 
-- Portrait: `assets/fan-liu.jpg` (original supplied by Fan Liu; web copy has no EXIF metadata).
+- Current portrait: `assets/fan-liu-graduation.png`. The supplied 132×127 image is shown compactly; replace with a higher-resolution original when available. The previous portrait remains in the assets folder.
 - Compression assay: `assets/a549-compression.mp4`.
 - Tracer experiments: `assets/fluid-influx.mp4` and `assets/fluid-efflux.mp4`.
 - Each video has a corresponding `-poster.jpg`. Videos use H.264/yuv420p MP4 with faststart, preserve the original frames and acquisition timing, and have no audio. Playback speed differs from acquisition time as shown by the embedded timestamps.
 - Players load on demand, have native controls, and do not autoplay. Playing another movie pauses the previous one.
-- `assets/platform-schematic.svg` is an explanatory diagram of the published compression assay, not to scale. The force readout is the microbalance, not cantilever bending.
+- `assets/micromechanics-platform.png` is Fan Liu’s supplied diagram. It appears under Engineering platforms within Research; the force readout is the microbalance. The previous standalone Platform navigation item has been removed.
 - The fluorescence movies are complementary tracer experiments. Efflux uses hyperosmotic conditions (750 mM sucrose), not mechanical compression. See Supplementary Fig. 9 of the linked Nature Physics paper.
+
+## Research organization
+
+Three question-led themes: tissue mechanics and transport; engineering platforms; cellular delivery and biofabrication. Supplied figures `teng-intracellular-delivery.png` and `teng-cell-printing.png` illustrate the ACS Nano and Nano Energy papers. Controlled drug release is identified as a potential application of the printed microspheres, not a demonstrated delivery assay. The CV remains accessible in About and Contact.
