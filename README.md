@@ -51,3 +51,9 @@ Plain HTML, CSS and JavaScript. No package installation, build command, database
 Three question-led themes: tissue mechanics and transport; engineering platforms; cellular delivery and biofabrication. Supplied figures `teng-intracellular-delivery.svg` and `teng-cell-printing.webp` illustrate the ACS Nano and Nano Energy papers. Controlled drug release is identified as a potential application of the printed microspheres, not a demonstrated delivery assay. The CV remains accessible in About and Contact.
 
 The cell-printing WebP is a lossless 1600×879 rendering of the complete supplied PDF page. The electroporation SVG preserves its embedded source image. All original figure panels are retained.
+
+## Visitor analytics
+
+GoatCounter records website visits through the asynchronous script in `index.html`. Sign in at https://fanliu.goatcounter.com/ to view the dashboard. Keep the dashboard private in GoatCounter's site settings. The website does not display a visitor counter or embed the dashboard.
+
+Tracking begins when the script is deployed. Navigation between sections of this single-page website does not create separate pageviews. To disable analytics, remove the script with the `data-goatcounter` attribute from `index.html`.
