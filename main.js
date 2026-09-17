@@ -31,6 +31,9 @@ function updateCurrentSection() {
   sectionLinks.forEach(item => {
     if (item.section.getBoundingClientRect().top <= threshold) current = item.link;
   });
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+    current = sectionLinks[sectionLinks.length - 1].link;
+  }
   sectionLinks.forEach(({ link }) => {
     if (link === current) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
