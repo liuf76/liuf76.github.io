@@ -29,6 +29,8 @@ Each change committed to the configured publishing branch triggers a website upd
 
 ## Research image credit
 
+The homepage backdrop, `assets/intercellular-structure.webp`, is a web-optimized conversion of Fan Liu's supplied 1024×1024 RGB TIFF. The source image is not retouched. Its dark overlay and responsive crop are controlled by `.hero-backdrop` in `styles.css`; replace this WebP with the same filename to update the background.
+
 The fluorescence microscopy image is credited to the researchers through MIT News. Its source and applicable reuse terms are at:
 https://news.mit.edu/2025/mit-engineers-uncover-surprising-reason-why-tissues-are-flexible-rigid-0620
 

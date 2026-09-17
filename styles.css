@@ -42,6 +42,31 @@ nav{gap:22px}
 @media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr) 140px;gap:22px;padding-block:42px}.hero-copy{display:contents}.hero-copy>.eyebrow,.hero-copy>h1,.hero-copy>.position{grid-column:1;grid-row:auto}.hero-copy>h1{font-size:2.6rem;margin-top:0;line-height:1.15}.hero-copy>.eyebrow{font-size:.6875rem;align-self:end}.hero-copy>.position{font-size:.875rem;margin-top:0}.hero-portrait{grid-column:2;grid-row:1/4;align-self:center;max-width:none}.hero-copy>.hero-statement,.hero-copy>.hero-intro,.hero-copy>.hero-links{grid-column:1/-1;margin-top:0}.hero-copy>.hero-statement{margin-top:9px;font-size:1.85rem}.degree{font-size:1rem;white-space:nowrap}.platform-demo{grid-template-columns:1fr;gap:28px}.platform-diagram{margin-block:24px}.platform-diagram img{min-height:180px;object-fit:contain}.flow-video-grid{grid-template-columns:1fr;gap:32px}.flow-movies>h3{font-size:1.45rem}.flow-video-grid .video-figure{max-width:500px}.platform-steps li{margin-bottom:18px}.video-figure figcaption p{font-size:1rem}}
 @media(max-width:390px){.hero{grid-template-columns:minmax(0,1fr) 115px;gap:18px}.hero-copy>h1{font-size:2.25rem}.hero-copy>.position{font-size:.8125rem}.hero-copy>.eyebrow{font-size:.625rem;letter-spacing:.08em}}
 
+/* A microscopy backdrop connects the introduction to the research. */
+.hero-backdrop{
+  background-color:#102b3e;
+  background-image:linear-gradient(90deg,rgba(10,30,44,.98) 0%,rgba(10,30,44,.94) 34%,rgba(10,30,44,.70) 64%,rgba(10,30,44,.48) 100%),url("assets/intercellular-structure.webp");
+  background-size:cover;
+  background-position:center 48%;
+}
+.hero-backdrop .hero h1{color:#fff}
+.hero-backdrop .eyebrow{color:#addfd5}
+.hero-backdrop .degree,.hero-backdrop .position span{color:#cbd9e2}
+.hero-backdrop .position,.hero-backdrop .hero-statement{color:#f3f7fa}
+.hero-backdrop .hero-intro{color:#d2dee6}
+.hero-backdrop .button{color:#142f43;background:#f5f8fa}
+.hero-backdrop .button:hover{color:#142f43;background:#fff}
+.hero-backdrop .text-link{color:#e4eef4;border-color:#8199aa}
+.hero-backdrop .text-link:hover{color:#fff;border-color:#fff}
+.hero-backdrop a:focus-visible{outline-color:#bceee7}
+.hero-backdrop .hero-portrait img{border:1px solid #ffffff80;box-shadow:0 18px 45px #00000038}
+@media(max-width:760px){
+  .hero-backdrop{
+    background-image:linear-gradient(110deg,rgba(10,30,44,.94),rgba(10,30,44,.84)),url("assets/intercellular-structure.webp");
+    background-position:60% center;
+  }
+}
+
 /* Three connected research themes */
 .graduation-portrait{max-width:350px;justify-self:center}
 .graduation-portrait img{aspect-ratio:4/5;height:auto;object-fit:cover;object-position:62% center;border-radius:3px}
