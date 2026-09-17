@@ -20,20 +20,36 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
-if ('IntersectionObserver' in window) {
-  const links = [...nav.querySelectorAll('a[href^="#"]')];
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        links.forEach(link => {
-          if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      }
-    });
-  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-  document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+// Keep Research selected throughout its subsections, including direct anchor jumps.
+const sectionLinks = [...nav.querySelectorAll('a[href^="#"]')].map(link => ({
+  link,
+  section: document.querySelector(link.hash)
+}));
+function updateCurrentSection() {
+  const threshold = document.querySelector('.site-header').getBoundingClientRect().bottom + 24;
+  let current;
+  sectionLinks.forEach(item => {
+    if (item.section.getBoundingClientRect().top <= threshold) current = item.link;
+  });
+  sectionLinks.forEach(({ link }) => {
+    if (link === current) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
 }
+let navUpdatePending = false;
+function scheduleNavUpdate() {
+  if (navUpdatePending) return;
+  navUpdatePending = true;
+  requestAnimationFrame(() => {
+    navUpdatePending = false;
+    updateCurrentSection();
+  });
+}
+window.addEventListener('scroll', scheduleNavUpdate, { passive: true });
+window.addEventListener('resize', scheduleNavUpdate);
+window.addEventListener('hashchange', scheduleNavUpdate);
+window.addEventListener('load', scheduleNavUpdate);
+updateCurrentSection();
 
 // Keep the reader's attention on one microscopy movie at a time.
 const movies = [...document.querySelectorAll('video')];
