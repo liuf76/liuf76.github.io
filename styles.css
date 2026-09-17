@@ -56,8 +56,8 @@ nav{gap:22px}
 .supplied-platform figcaption{font-size:.8125rem;color:var(--muted);line-height:1.7;margin-top:12px}
 .supplied-platform figcaption a{white-space:nowrap}
 .platform-protocol{margin:32px 0 0;max-width:800px;min-width:0}
-.platform-protocol>a,.platform-protocol img{display:block;width:100%}
-.platform-protocol img{height:auto;border:1px solid #c8d4dd;border-radius:3px;background:#fff}
+.platform-protocol video{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid #c8d4dd;border-radius:3px;background:#fff;object-fit:contain}
+.platform-protocol video:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .platform-protocol figcaption{margin-top:18px;padding-left:18px;border-left:2px solid var(--accent)}
 .platform-protocol h4{margin:0 0 8px;color:var(--ink);font-family:var(--serif);font-size:1.35rem;font-weight:400;line-height:1.4}
 .platform-protocol figcaption p{color:var(--text);font-size:1rem;line-height:1.7}
