@@ -55,6 +55,14 @@ nav{gap:22px}
 .supplied-platform img{display:block;width:100%;height:auto;aspect-ratio:364/385;object-fit:contain;background:#fff;border-radius:3px;padding:10px;border:1px solid #c8d4dd}
 .supplied-platform figcaption{font-size:.8125rem;color:var(--muted);line-height:1.7;margin-top:12px}
 .supplied-platform figcaption a{white-space:nowrap}
+.platform-protocol{margin:32px 0 0;max-width:800px;min-width:0}
+.platform-protocol>a,.platform-protocol img{display:block;width:100%}
+.platform-protocol img{height:auto;border:1px solid #c8d4dd;border-radius:3px;background:#fff}
+.platform-protocol figcaption{margin-top:18px;padding-left:18px;border-left:2px solid var(--accent)}
+.platform-protocol h4{margin:0 0 8px;color:var(--ink);font-family:var(--serif);font-size:1.35rem;font-weight:400;line-height:1.4}
+.platform-protocol figcaption p{color:var(--text);font-size:1rem;line-height:1.7}
+.platform-protocol figcaption .protocol-note{margin-top:10px;color:var(--muted);font-size:.8125rem}
+.platform-protocol .protocol-note a{display:inline-block}
 .assay-steps{list-style:none;counter-reset:assay;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:22px 0 0;margin:24px 0;border-top:1px solid #c8d4dd}
 .assay-steps li{counter-increment:assay}
 .assay-steps strong{display:block;color:var(--ink);font-size:1rem;font-weight:600;margin-bottom:7px}
