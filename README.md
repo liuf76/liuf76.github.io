@@ -38,14 +38,16 @@ Plain HTML, CSS and JavaScript. No package installation, build command, database
 
 ## Portrait and microscopy movies
 
-- Current portrait: `assets/fan-liu-graduation-hq.jpg`, optimized from the supplied 2048×1536 original. The full composition is retained in the file; CSS uses a 4:5 frame with the subject centered. The previous portraits remain in the assets folder.
+- Current portrait: `assets/fan-liu-graduation-hq.jpg`, optimized from the supplied 2048×1536 IMG_2951.JPG original. The full composition is retained in the file; CSS uses a 4:5 frame with the subject centered. The previous portraits remain in the assets folder.
 - Compression assay: `assets/a549-compression.mp4`.
 - Tracer experiments: `assets/fluid-influx.mp4` and `assets/fluid-efflux.mp4`.
 - Each video has a corresponding `-poster.jpg`. Videos use H.264/yuv420p MP4 with faststart, preserve the original frames and acquisition timing, and have no audio. Playback speed differs from acquisition time as shown by the embedded timestamps.
 - Players load on demand, have native controls, and do not autoplay. Playing another movie pauses the previous one.
-- `assets/micromechanics-platform.png` is Fan Liu’s supplied diagram. It appears under Engineering platforms within Research; the force readout is the microbalance. The previous standalone Platform navigation item has been removed.
+- `assets/Platform.svg` is Fan Liu’s supplied diagram. It appears under Engineering platforms within Research; the force readout is the microbalance. The previous standalone Platform navigation item has been removed.
 - The fluorescence movies are complementary tracer experiments. Efflux uses hyperosmotic conditions (750 mM sucrose), not mechanical compression. See Supplementary Fig. 9 of the linked Nature Physics paper.
 
 ## Research organization
 
-Three question-led themes: tissue mechanics and transport; engineering platforms; cellular delivery and biofabrication. Supplied figures `teng-intracellular-delivery.png` and `teng-cell-printing.png` illustrate the ACS Nano and Nano Energy papers. Controlled drug release is identified as a potential application of the printed microspheres, not a demonstrated delivery assay. The CV remains accessible in About and Contact.
+Three question-led themes: tissue mechanics and transport; engineering platforms; cellular delivery and biofabrication. Supplied figures `teng-intracellular-delivery.svg` and `teng-cell-printing.webp` illustrate the ACS Nano and Nano Energy papers. Controlled drug release is identified as a potential application of the printed microspheres, not a demonstrated delivery assay. The CV remains accessible in About and Contact.
+
+The cell-printing WebP is a lossless 1600×879 rendering of the complete supplied PDF page. The electroporation SVG preserves its embedded source image. All original figure panels are retained.

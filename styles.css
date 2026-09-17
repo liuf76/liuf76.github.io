@@ -52,7 +52,7 @@ nav{gap:22px}
 .research-topic .flow-video-grid{margin-top:25px}
 .platform-media-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:26px}
 .supplied-platform{margin:0;min-width:0}
-.supplied-platform img{display:block;width:100%;height:auto;aspect-ratio:546/578;object-fit:contain;background:#fff;border-radius:3px;padding:10px;border:1px solid #c8d4dd}
+.supplied-platform img{display:block;width:100%;height:auto;aspect-ratio:364/385;object-fit:contain;background:#fff;border-radius:3px;padding:10px;border:1px solid #c8d4dd}
 .supplied-platform figcaption{font-size:.8125rem;color:var(--muted);line-height:1.7;margin-top:12px}
 .supplied-platform figcaption a{white-space:nowrap}
 .assay-steps{list-style:none;counter-reset:assay;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:22px 0 0;margin:24px 0;border-top:1px solid #c8d4dd}
