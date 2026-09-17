@@ -61,3 +61,8 @@ movies.forEach(movie => {
     movies.forEach(other => { if (other !== movie) other.pause(); });
   });
 });
+
+const methodology = document.querySelector('#methodology');
+methodology.addEventListener('toggle', () => {
+  if (!methodology.open) methodology.querySelector('video').pause();
+});
