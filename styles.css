@@ -60,11 +60,16 @@ nav{gap:22px}
 .hero-backdrop .text-link:hover{color:#fff;border-color:#fff}
 .hero-backdrop a:focus-visible{outline-color:#bceee7}
 .hero-backdrop .hero-portrait img{border:1px solid #ffffff80;box-shadow:0 18px 45px #00000038}
+.hero-highlight{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;max-width:540px;margin-top:18px;font-size:.8125rem;line-height:1.7;color:#d2dee6}
+.hero-highlight>span{color:#addfd5;font-weight:600}
+.hero-highlight>a{color:#e4eef4;text-decoration-color:#8199aa}
+.hero-highlight>a:hover{color:#fff;text-decoration-color:#fff}
 @media(max-width:760px){
   .hero-backdrop{
     background-image:linear-gradient(110deg,rgba(10,30,44,.94),rgba(10,30,44,.84)),url("assets/intercellular-structure.webp");
     background-position:60% center;
   }
+  .hero-copy>.hero-highlight{grid-column:1/-1;margin-top:0}
 }
 
 /* Three connected research themes */
@@ -102,8 +107,8 @@ nav{gap:22px}
 
 /* Research overview, optional methods, and emerging directions */
 .research-overview {
-  max-width: 800px;
-  margin: 28px 0 0;
+  max-width: 660px;
+  margin: 20px 0 0;
 }
 
 .research-overview > a,
@@ -121,7 +126,7 @@ nav{gap:22px}
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 6px 20px;
-  margin-top: 12px;
+  margin-top: 8px;
   color: var(--muted);
   font-size: .8125rem;
   line-height: 1.6;
@@ -151,7 +156,7 @@ nav{gap:22px}
   gap: 18px;
   list-style: none;
   padding: 0;
-  margin: 28px 0 38px;
+  margin: 24px 0 30px;
 }
 
 .research-section .research-map li {
