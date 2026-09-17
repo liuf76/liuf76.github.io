@@ -72,6 +72,40 @@ nav{gap:22px}
 @media(max-width:760px){.graduation-portrait{max-width:140px}.research-topic{margin-top:32px;padding-top:24px}.research-topic>h3{font-size:1.45rem}.platform-media-grid,.delivery-grid{grid-template-columns:1fr;gap:28px}.supplied-platform{max-width:430px}.assay-steps{grid-template-columns:1fr;gap:17px}.assay-steps strong{margin-bottom:4px}.delivery-image{height:auto;min-height:210px;padding:14px}.delivery-image img{max-height:300px}.delivery-figure figcaption p{font-size:1rem}}
 
 /* Research overview, optional methods, and emerging directions */
+.research-overview {
+  max-width: 800px;
+  margin: 28px 0 0;
+}
+
+.research-overview > a,
+.research-overview img {
+  display: block;
+}
+
+.research-overview img {
+  width: 100%;
+  height: auto;
+}
+
+.research-overview figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 20px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: .8125rem;
+  line-height: 1.6;
+}
+
+.research-overview figcaption span {
+  flex: 1 1 300px;
+}
+
+.research-overview figcaption a {
+  white-space: nowrap;
+}
+
 .research-section .section-lead {
   margin-bottom: 16px;
   overflow-wrap: break-word;

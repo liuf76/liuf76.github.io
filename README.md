@@ -50,6 +50,8 @@ Plain HTML, CSS and JavaScript. No package installation, build command, database
 
 Three connected, question-led directions: tissue mechanics and transport (`tissue-mechanics`); engineering tools for measurement and control (`platform`); engineered tissue models and disease (`tissue-models`). The overview links to each direction. The Nature Physics discovery leads the section. The tissue-model direction distinguishes the published organoid-on-chip collaboration from emerging goals in mechanics, transport, and disease.
 
+The opening schematic is `assets/research-overview.svg`, adapted from the supplied `schametic.svg`. It preserves the original triangular connections and all three embedded illustrations, with labels, colors, and typography aligned to the research directions. The arrows represent connections between research directions. Click the figure or “View full size” to open it separately.
+
 Tracer details, the three-step micromechanics procedure, and earlier TENG work appear in native expandable `<details>` elements. These open with a click, Enter, or Space and work without JavaScript. Edit their `<summary>` labels or content directly in `index.html`. Earlier TENG work is nested under engineering tools, with supplied figures `teng-intracellular-delivery.svg` and `teng-cell-printing.webp` and links to the ACS Nano and Nano Energy papers. Controlled drug release remains a potential application, not a demonstrated delivery assay. The CV remains accessible in About and Contact.
 
 The cell-printing WebP is a lossless 1600×879 rendering of the complete supplied PDF page. The electroporation SVG preserves its embedded source image. All original figure panels are retained.
