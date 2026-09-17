@@ -38,7 +38,7 @@ Plain HTML, CSS and JavaScript. No package installation, build command, database
 
 ## Portrait and microscopy movies
 
-- Current portrait: `assets/fan-liu-graduation.png`. The supplied 132×127 image is shown compactly; replace with a higher-resolution original when available. The previous portrait remains in the assets folder.
+- Current portrait: `assets/fan-liu-graduation-hq.jpg`, optimized from the supplied 2048×1536 original. The full composition is retained in the file; CSS uses a 4:5 frame with the subject centered. The previous portraits remain in the assets folder.
 - Compression assay: `assets/a549-compression.mp4`.
 - Tracer experiments: `assets/fluid-influx.mp4` and `assets/fluid-efflux.mp4`.
 - Each video has a corresponding `-poster.jpg`. Videos use H.264/yuv420p MP4 with faststart, preserve the original frames and acquisition timing, and have no audio. Playback speed differs from acquisition time as shown by the embedded timestamps.

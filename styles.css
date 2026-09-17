@@ -43,8 +43,8 @@ nav{gap:22px}
 @media(max-width:390px){.hero{grid-template-columns:minmax(0,1fr) 115px;gap:18px}.hero-copy>h1{font-size:2.25rem}.hero-copy>.position{font-size:.8125rem}.hero-copy>.eyebrow{font-size:.625rem;letter-spacing:.08em}}
 
 /* Three connected research themes */
-.graduation-portrait{max-width:180px;justify-self:center}
-.graduation-portrait img{aspect-ratio:132/127;height:auto;object-fit:contain;object-position:center;border-radius:3px}
+.graduation-portrait{max-width:350px;justify-self:center}
+.graduation-portrait img{aspect-ratio:4/5;height:auto;object-fit:cover;object-position:62% center;border-radius:3px}
 .research-topic{border-top:1px solid #c8d4dd;padding-top:29px;margin-top:40px}
 .research-topic:first-of-type{margin-top:0}
 .research-topic>h3{font-family:var(--serif);font-size:1.65rem;font-weight:400;line-height:1.4;letter-spacing:-.015em;margin:10px 0 14px}
