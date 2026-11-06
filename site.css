@@ -34,3 +34,32 @@ html{scroll-behavior:smooth;scroll-padding-top:110px}body{background:#fff;font-s
 .about-content .education .edu-year{padding-top:2px}
 @media(max-width:1000px){.research-hero .home-hero{gap:35px;grid-template-columns:minmax(0,1fr) 230px}.hero-image-note{padding:17px}.hero-image-note>p:not(.eyebrow){font-size:24px}.about-content>.about-grid{grid-template-columns:200px minmax(0,1fr);gap:28px 40px}}
 @media(max-width:760px){.research-hero{background-image:linear-gradient(105deg,rgba(10,30,44,.95),rgba(10,30,44,.66)),url("assets/intercellular-structure.webp");background-position:60% center}.research-hero .home-hero{grid-template-columns:1fr;gap:27px;padding-block:37px 31px;min-height:0}.research-hero .home-copy h1{font-size:clamp(37px,9.5vw,52px);margin-top:18px;letter-spacing:-1.15px}.research-hero .home-description{font-size:14px;max-width:460px}.research-hero .home-role{font-size:10px;margin-top:22px;max-width:330px}.hero-image-note{justify-self:start;max-width:none;width:auto;background:rgba(10,30,44,.48);padding:13px 17px;border-left-width:1px}.hero-image-note>.eyebrow{font-size:9px}.hero-image-note>p:not(.eyebrow){font-size:22px;margin-top:5px}.hero-image-note>p br{display:none}.hero-image-note>a{font-size:11px;margin-top:9px}.about-content>.about-grid{grid-template-columns:1fr;gap:25px}.about-portrait{grid-column:1;grid-row:1;width:160px}.about-portrait img{aspect-ratio:1.05}.about-content .prose{grid-column:1;grid-row:2}.about-content .education{grid-column:1;grid-row:3;padding-top:24px}.about-content .education>div{margin-top:0}}
+
+/* Sans-serif trial: Source Sans 3 for page typography. */
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url("https://fonts.gstatic.com/s/sourcesans3/v20/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8Ky461EN.ttf") format("truetype")}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:500;font-display:swap;src:url("https://fonts.gstatic.com/s/sourcesans3/v20/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8KyK61EN.ttf") format("truetype")}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:600;font-display:swap;src:url("https://fonts.gstatic.com/s/sourcesans3/v20/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8Kxm7FEN.ttf") format("truetype")}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:700;font-display:swap;src:url("https://fonts.gstatic.com/s/sourcesans3/v20/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8Kxf7FEN.ttf") format("truetype")}
+:root{--sans:"Source Sans 3","Segoe UI",Arial,sans-serif;--serif:var(--sans)}
+body{font-family:var(--sans)}
+.wordmark{font-weight:600;letter-spacing:-.03em}
+h1,h2,h3{font-weight:600}
+.research-hero .home-copy h1{font-size:clamp(42px,4.3vw,62px);line-height:1.1;letter-spacing:-.025em;font-weight:600}
+.hero-image-note>p:not(.eyebrow){font-weight:500;font-size:27px;line-height:1.2;letter-spacing:-.015em}
+.page-heading h1{font-size:clamp(38px,4vw,54px);letter-spacing:-.025em;font-weight:600}
+.section-top h2,.feature-story h2,.research-overview-text h2{font-weight:600;letter-spacing:-.02em}
+.direction h3{font-size:24px;font-weight:600;letter-spacing:-.015em}
+.research-index h2{font-size:27px;font-weight:600;letter-spacing:-.015em}
+.project-body .research-topic>h1{font-size:39px;font-weight:600;letter-spacing:-.02em}
+.publication-list h3,.talks-list h3{font-weight:500;line-height:1.4;letter-spacing:-.01em}
+.publication-list .pub-meta span:first-child{font-weight:500}
+.about-content .education h3,.teaching-bottom h3,.recent-note h3{font-weight:600;letter-spacing:-.01em}
+@media(max-width:1000px) and (min-width:761px){.research-hero .home-copy h1{font-size:clamp(38px,5.1vw,48px)}}
+@media(max-width:760px){
+  .research-hero .home-copy h1{font-size:clamp(34px,9vw,48px);line-height:1.13;letter-spacing:-.025em}
+  .hero-image-note>p:not(.eyebrow){font-size:23px}
+  .page-heading h1{font-size:36px}
+  .project-body .research-topic>h1{font-size:32px}
+  .direction h3{font-size:21px}
+  .research-index h2{font-size:23px}
+}

@@ -19,6 +19,10 @@ The site uses plain HTML, CSS and JavaScript and publishes from the repository's
 
 The home page uses the supplied microscopy image `assets/intercellular-structure.webp`. The portrait appears on About. Research text, publication links, figures and movies are preserved from the previous site.
 
+## Typography
+
+Current pages use Source Sans 3 with system sans-serif fallbacks. Decorative periods are removed from the name, headings and short labels. Scientific body text, abbreviations and citations retain their punctuation. The shared stylesheet is versioned as `site.css?v=20261106-source-sans`. The archived long-page version keeps its original typography.
+
 ## CV
 
 `assets/Fan_Liu_CV.pdf` is the November 2, 2026 approved PDF, used without rewriting or recompiling its contents. Every current-page CV link includes `?v=20261106` to avoid showing a cached older copy. When replacing the PDF in future, update this version query in the nine pages.
