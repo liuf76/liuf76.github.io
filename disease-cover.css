@@ -1,0 +1,8 @@
+/* Keep the complete mouse schematic and microscopy panels visible inside the existing card frame. */
+.direction-image.islet-cover { background: #fff; }
+.direction-image.islet-cover img, .direction:hover .islet-cover img { object-fit: contain; object-position: center; transform: none; }
+.direction .islet-credit { display: block; margin-top: .6rem; color: #43596b; font-size: .8125rem; line-height: 1.45; }
+
+@media (max-width: 760px) {
+  .direction-image.islet-cover { aspect-ratio: 2048 / 1076; }
+}

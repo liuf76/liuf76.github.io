@@ -1,0 +1,19 @@
+.disease-intro { max-width: 46rem; }
+.disease-case { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .95fr); column-gap: clamp(1.2rem, 3vw, 2.6rem); align-items: start; padding: clamp(1.5rem,3vw,2.4rem) 0; border-top: 1px solid #c8d4dd; }
+.disease-intro + .disease-case { margin-top: 1.75rem; }
+.case-copy h2, .disease-future h2 { margin: .45rem 0 .7rem; color: var(--ink); font-size: clamp(1.3rem, 2.1vw, 1.65rem); font-weight: 600; line-height: 1.24; letter-spacing: -.015em; }
+.case-copy > p:not(.eyebrow), .disease-future > p:not(.eyebrow) { font-size: 1rem; line-height: 1.7; }
+.case-copy p + p { margin-top: .6rem; }
+.case-copy .text-link { margin-top: .6rem; font-size: .92rem; }
+.case-figure { width: 100%; max-width: 474px; margin: 0; }
+.case-figure img { display: block; max-width: 100%; width: 100%; height: auto; }
+.case-figure figcaption { display: block; margin: .5rem 0 0; padding: 0; color: #475d6a; font-size: .875rem; line-height: 1.5; }
+.case-figure cite { display: block; font-size: .8125rem; font-style: normal; }
+.case-figure cite a { color: inherit; text-underline-offset: .15em; }
+.disease-case .disease-simulations { grid-column: 1 / -1; width: 100%; min-width: 0; }
+.disease-simulations .simulation-media-grid { margin-top: 1rem; }
+.disease-future { max-width: 47rem; margin: .35rem 0 .5rem; padding: .15rem 0 .15rem 1.1rem; border-left: 2px solid var(--accent); }
+@media(max-width: 850px) {
+  .disease-case { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
+  .disease-case .disease-simulations { margin-top: .35rem; }
+}

@@ -1,0 +1,5 @@
+/* Allow the question and accompanying links to wrap independently. */
+.home-research .section-top > div { min-width: 0; }
+.home-research .section-top h2 { max-width: 35ch; text-wrap: balance; }
+.home-research .research-connection { max-width: 66ch; margin: .65rem 0 0; color: var(--text); font-size: 1rem; line-height: 1.6; }
+.home-research .section-top > .text-link { flex-shrink: 0; }
